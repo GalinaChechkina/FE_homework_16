@@ -1,0 +1,21 @@
+.topic{
+    width: 250px;
+    height: 300px;
+    padding: 25px;
+    border: 1px solid black;
+    transition: border-radius,
+                color,
+                width;
+    transition-duration: 1s;
+}
+.topic:hover{
+    width: 430px;
+    border-radius: 15px;
+}
+.topic img{
+    width: 100%;
+    object-fit: contain;
+}
+.topic:hover p{
+    color: transparent;
+} 
