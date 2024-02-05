@@ -3,19 +3,24 @@
     height: 300px;
     padding: 25px;
     border: 1px solid black;
-    transition: border-radius,
+    transition: border-radius,  /*добавили анимацию*/
                 color,
                 width;
     transition-duration: 1s;
 }
-.topic:hover{
+.topic:hover{ /*при наведении мышки эл-т меняется*/
     width: 430px;
     border-radius: 15px;
 }
 .topic img{
     width: 100%;
     object-fit: contain;
+    transition: transform 1s;
 }
-.topic:hover p{
+.topic:hover img{
+    transform: rotate(360deg);
+
+}
+.topic:hover p{  /*при наведении мышки эл-т меняется*/
     color: transparent;
 } 
